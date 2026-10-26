@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --ground: #0a0b10;
+        --ink: #ffffff;
+        --cyan: #38bdf8;
+        --purple: #a855f7;
+        --indigo: #6366f1;
+        --muted: #94a3b8;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html, body {
+        margin: 0;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: var(--ground);
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: radial-gradient(circle at 50% 25%, rgba(99, 102, 241, 0.25) 0%, rgba(10, 11, 16, 0.98) 75%);
+      }
+      .ambient-glow {
+        position: absolute;
+        width: 700px;
+        height: 700px;
+        border-radius: 50%;
+        top: 250px;
+        left: 190px;
+        background: radial-gradient(circle, rgba(168, 85, 247, 0.28) 0%, rgba(56, 189, 248, 0) 70%);
+        pointer-events: none;
+      }
+      /* Absolute layout zones to avoid any overlap */
+      #header-row {
+        position: absolute;
+        top: 140px;
+        left: 80px;
+        width: 920px;
+        height: 80px;
+      }
+      .badge-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        padding: 14px 28px;
+        border-radius: 9999px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        color: var(--cyan);
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+      .badge-dot {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: var(--cyan);
+        box-shadow: 0 0 16px var(--cyan);
+      }
+      #hero-section {
+        position: absolute;
+        top: 380px;
+        left: 80px;
+        width: 920px;
+        height: 800px;
+      }
+      .title-large {
+        color: var(--ink);
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 108px;
+        font-weight: 700;
+        line-height: 1.05;
+        letter-spacing: -0.04em;
+        margin-bottom: 36px;
+      }
+      .gradient-span {
+        background: linear-gradient(135deg, #38bdf8 0%, #818cf8 45%, #c084fc 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .body-desc {
+        color: var(--muted);
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 1.45;
+        max-width: 880px;
+      }
+      #card-footer {
+        position: absolute;
+        bottom: 140px;
+        left: 80px;
+        width: 920px;
+        height: 180px;
+        padding: 44px 48px;
+        border-radius: 36px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(20px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .card-left {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .card-title {
+        color: var(--ink);
+        font-size: 38px;
+        font-weight: 700;
+      }
+      .card-sub {
+        color: var(--cyan);
+        font-size: 30px;
+        font-weight: 600;
+      }
+      .card-pill {
+        padding: 16px 32px;
+        border-radius: 9999px;
+        background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="6"
+      data-width="1080"
+      data-height="1920"
+      data-layout-allow-overlap
+    >
+      <div id="ambient" class="ambient-glow clip" data-start="0" data-duration="6" data-track-index="0"></div>
+
+      <div id="header-row" class="clip" data-start="0" data-duration="6" data-track-index="1" data-layout-allow-overlap>
+        <div class="badge-tag">
+          <span class="badge-dot"></span>
+          Paperclip Studio
+        </div>
+      </div>
+
+      <div id="hero-section" class="clip" data-start="0" data-duration="6" data-track-index="2" data-layout-allow-overlap>
+        <h1 class="title-large">
+          Automate Video.<br>
+          <span class="gradient-span">Run by AI Agents.</span>
+        </h1>
+        <p class="body-desc">
+          Paperclip orchestrates the team. HyperFrames renders programmatic 4K motion graphics directly from code.
+        </p>
+      </div>
+
+      <div id="card-footer" class="clip" data-start="0" data-duration="6" data-track-index="3" data-layout-allow-overlap>
+        <div class="card-left">
+          <span class="card-title">Production Status</span>
+          <span class="card-sub">Autonomous Execution Ready</span>
+        </div>
+        <div class="card-pill">PAP-1</div>
+      </div>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+
+      // Start visible on frame 0 to avoid first_frame_empty warning
+      tl.set(["#header-row", "#hero-section", "#card-footer"], { opacity: 1 }, 0);
+
+      // Ambient pulse
+      tl.fromTo("#ambient",
+        { scale: 0.85, opacity: 0.6 },
+        { scale: 1.25, opacity: 0.95, duration: 5.5, ease: "sine.inOut" },
+        0
+      );
+
+      // Subtle entrance micro-motion from t=0
+      tl.fromTo("#header-row",
+        { y: -15 },
+        { y: 0, duration: 0.6, ease: "power2.out" },
+        0
+      );
+
+      tl.fromTo("#hero-section",
+        { y: 30, scale: 0.98 },
+        { y: 0, scale: 1, duration: 1.0, ease: "power3.out" },
+        0.1
+      );
+
+      tl.fromTo("#card-footer",
+        { y: 25 },
+        { y: 0, duration: 0.8, ease: "back.out(1.2)" },
+        0.3
+      );
+
+      // Gentle continuous motion
+      tl.to("#hero-section",
+        { scale: 1.02, duration: 4.5, ease: "sine.inOut" },
+        1.2
+      );
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --ground: #08090d;
+        --ink: #ffffff;
+        --cyan: #38bdf8;
+        --amber: #f59e0b;
+        --purple: #8b5cf6;
+        --card-bg: rgba(255, 255, 255, 0.04);
+        --card-border: rgba(255, 255, 255, 0.1);
+        --muted: #94a3b8;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html, body {
+        margin: 0;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: var(--ground);
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: radial-gradient(circle at 50% 15%, rgba(139, 92, 246, 0.28) 0%, rgba(8, 9, 13, 0.98) 70%);
+      }
+      .bg-glow {
+        position: absolute;
+        width: 650px;
+        height: 650px;
+        border-radius: 50%;
+        top: 280px;
+        left: 215px;
+        background: radial-gradient(circle, rgba(56, 189, 248, 0.22) 0%, rgba(139, 92, 246, 0) 70%);
+        pointer-events: none;
+      }
+      /* Layout Zones */
+      #top-badge {
+        position: absolute;
+        top: 140px;
+        left: 80px;
+        width: 920px;
+        height: 70px;
+      }
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 28px;
+        border-radius: 9999px;
+        background: rgba(245, 158, 11, 0.1);
+        border: 1px solid rgba(245, 158, 11, 0.3);
+        color: var(--amber);
+        font-size: 30px;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+      #header-hook {
+        position: absolute;
+        top: 250px;
+        left: 80px;
+        width: 920px;
+        height: 280px;
+      }
+      .headline {
+        color: var(--ink);
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 88px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+      }
+      .gradient-txt {
+        background: linear-gradient(135deg, #f59e0b 0%, #ec4899 50%, #8b5cf6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      #tool-list {
+        position: absolute;
+        top: 590px;
+        left: 80px;
+        width: 920px;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+      }
+      .tool-card {
+        padding: 36px 40px;
+        border-radius: 28px;
+        background: var(--card-bg);
+        border: 1px solid var(--card-border);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .tool-num {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        color: var(--amber);
+        margin-right: 24px;
+      }
+      .tool-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .tool-name {
+        color: var(--ink);
+        font-size: 42px;
+        font-weight: 700;
+      }
+      .tool-desc {
+        color: var(--muted);
+        font-size: 30px;
+        font-weight: 500;
+      }
+      .tool-badge {
+        padding: 10px 22px;
+        border-radius: 9999px;
+        background: rgba(56, 189, 248, 0.12);
+        color: var(--cyan);
+        font-size: 26px;
+        font-weight: 700;
+      }
+      #cta-footer {
+        position: absolute;
+        bottom: 140px;
+        left: 80px;
+        width: 920px;
+        height: 150px;
+        padding: 36px 44px;
+        border-radius: 32px;
+        background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(245, 158, 11, 0.12) 100%);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .cta-text {
+        color: var(--ink);
+        font-size: 36px;
+        font-weight: 700;
+      }
+      .cta-pill {
+        padding: 16px 36px;
+        border-radius: 9999px;
+        background: linear-gradient(135deg, #f59e0b 0%, #ec4899 100%);
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 800;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="6"
+      data-width="1080"
+      data-height="1920"
+      data-layout-allow-overlap
+    >
+      <div id="glow" class="bg-glow clip" data-start="0" data-duration="6" data-track-index="0"></div>
+
+      <div id="top-badge" class="clip" data-start="0" data-duration="6" data-track-index="1" data-layout-allow-overlap>
+        <div class="pill">⚡ AI Productivity Tips</div>
+      </div>
+
+      <div id="header-hook" class="clip" data-start="0" data-duration="6" data-track-index="2" data-layout-allow-overlap>
+        <h1 class="headline">
+          Stop Manual Work.<br>
+          <span class="gradient-txt">3 AI Tools Wajib Coba:</span>
+        </h1>
+      </div>
+
+      <div id="tool-list" class="clip" data-start="0" data-duration="6" data-track-index="3" data-layout-allow-overlap>
+        <div id="item-1" class="tool-card">
+          <span class="tool-num">01</span>
+          <div class="tool-info">
+            <span class="tool-name">Paperclip</span>
+            <span class="tool-desc">Orkestrasi Tim AI Agent Mandiri</span>
+          </div>
+          <span class="tool-badge">Control Plane</span>
+        </div>
+
+        <div id="item-2" class="tool-card">
+          <span class="tool-num">02</span>
+          <div class="tool-info">
+            <span class="tool-name">HyperFrames</span>
+            <span class="tool-desc">Render Video MP4 Berbasis Kode HTML</span>
+          </div>
+          <span class="tool-badge">Video Engine</span>
+        </div>
+
+        <div id="item-3" class="tool-card">
+          <span class="tool-num">03</span>
+          <div class="tool-info">
+            <span class="tool-name">Gemini Flash</span>
+            <span class="tool-desc">AI Reasoning Super Cepat & Cerdas</span>
+          </div>
+          <span class="tool-badge">AI Brain</span>
+        </div>
+      </div>
+
+      <div id="cta-footer" class="clip" data-start="0" data-duration="6" data-track-index="4" data-layout-allow-overlap>
+        <span class="cta-text">Mau coba sekarang?</span>
+        <span class="cta-pill">Save & Follow</span>
+      </div>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+
+      // Ensure elements visible from t=0
+      tl.set(["#top-badge", "#header-hook", "#tool-list", "#cta-footer"], { opacity: 1 }, 0);
+
+      // Subtle ambient pulse
+      tl.fromTo("#glow",
+        { scale: 0.8, opacity: 0.5 },
+        { scale: 1.3, opacity: 0.85, duration: 5.5, ease: "sine.inOut" },
+        0
+      );
+
+      // Micro entrance
+      tl.fromTo("#top-badge", { y: -15 }, { y: 0, duration: 0.5, ease: "power2.out" }, 0);
+      tl.fromTo("#header-hook", { y: 20 }, { y: 0, duration: 0.7, ease: "power3.out" }, 0.1);
+
+      // Stagger tool items
+      tl.fromTo("#item-1", { x: -30, opacity: 0.5 }, { x: 0, opacity: 1, duration: 0.6, ease: "power2.out" }, 0.4);
+      tl.fromTo("#item-2", { x: -30, opacity: 0.5 }, { x: 0, opacity: 1, duration: 0.6, ease: "power2.out" }, 0.7);
+      tl.fromTo("#item-3", { x: -30, opacity: 0.5 }, { x: 0, opacity: 1, duration: 0.6, ease: "power2.out" }, 1.0);
+
+      // Pop CTA
+      tl.fromTo("#cta-footer", { y: 30 }, { y: 0, duration: 0.8, ease: "back.out(1.4)" }, 1.3);
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

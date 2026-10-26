@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "historyId": "bd9027ff-b330-41d1-8838-2a614ef38d90",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "AGENTS.md": {
+      "hash": "1b36171117cb7c18f4100a0db6a3782ff2e096115995733200445cc2e80a4060",
+      "content": "C:\\Users\\user\\.cache\\hyperframes\\history\\bd9027ff-b330-41d1-8838-2a614ef38d90\\blobs\\1b\\1b36171117cb7c18f4100a0db6a3782ff2e096115995733200445cc2e80a4060"
+    },
+    "CLAUDE.md": {
+      "hash": "1b36171117cb7c18f4100a0db6a3782ff2e096115995733200445cc2e80a4060",
+      "content": "C:\\Users\\user\\.cache\\hyperframes\\history\\bd9027ff-b330-41d1-8838-2a614ef38d90\\blobs\\1b\\1b36171117cb7c18f4100a0db6a3782ff2e096115995733200445cc2e80a4060"
+    },
+    "hyperframes.json": {
+      "hash": "53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
+      "content": "C:\\Users\\user\\.cache\\hyperframes\\history\\bd9027ff-b330-41d1-8838-2a614ef38d90\\blobs\\53\\53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50"
+    },
+    "index.html": {
+      "hash": "9d4b3adcef6422226553546fd38291ab6cdedeb99b7eba601f7ad6f1bb846d56",
+      "content": "C:\\Users\\user\\.cache\\hyperframes\\history\\bd9027ff-b330-41d1-8838-2a614ef38d90\\blobs\\9d\\9d4b3adcef6422226553546fd38291ab6cdedeb99b7eba601f7ad6f1bb846d56"
+    },
+    "meta.json": {
+      "hash": "11e7a7b841c044739d9079f0ffdb85a6428311bd30c373039ca2675dcbf2656a",
+      "content": "C:\\Users\\user\\.cache\\hyperframes\\history\\bd9027ff-b330-41d1-8838-2a614ef38d90\\blobs\\11\\11e7a7b841c044739d9079f0ffdb85a6428311bd30c373039ca2675dcbf2656a"
+    },
+    "package.json": {
+      "hash": "6d110aa06d3d687d94835d45b7db1ec8e60ba909e3990ee001f9f5c114b53277",
+      "content": "C:\\Users\\user\\.cache\\hyperframes\\history\\bd9027ff-b330-41d1-8838-2a614ef38d90\\blobs\\6d\\6d110aa06d3d687d94835d45b7db1ec8e60ba909e3990ee001f9f5c114b53277"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": {
+      "revision": null,
+      "id": "bb732701-632a-40b2-87da-65d8aaf33ac5"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "id": "bb732701-632a-40b2-87da-65d8aaf33ac5",
+        "scope": "project",
+        "report": "C:\\Users\\user\\.gemini\\antigravity-ide\\scratch\\paperclip\\content-videos\\PAP-2-ai-productivity\\.hyperframes\\artifacts\\checks\\bb732701-632a-40b2-87da-65d8aaf33ac5.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 3000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1792967737980,
+        "contentHash": "e501260c97236f20bb89f4b484f14c5ce164f34b16ab04728f8a2201c5c174a4",
+        "revision": null,
+        "inputFingerprint": "1acd5d4a33ef229f71bf6ff249999a340c96d37ed7a15097ba3dca581149c3bd",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "481a2032-5f6b-4582-8971-5b289ba65304",
+      "completedAt": 1792967759438,
+      "output": "C:\\Users\\user\\.gemini\\antigravity-ide\\scratch\\paperclip\\content-videos\\PAP-2-ai-productivity\\out.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": []
+  },
+  "pendingArtifactCleanup": []
+}

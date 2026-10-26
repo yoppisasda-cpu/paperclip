@@ -1,0 +1,148 @@
+{
+  "version": 1,
+  "historyId": "2e1c496a-ef99-4d9a-81d4-4c327ca93c27",
+  "currentRevision": "471bcb34-f9a8-4401-9000-c92bfa7b71e0",
+  "pendingChanges": false,
+  "files": {
+    "AGENTS.md": {
+      "hash": "1b36171117cb7c18f4100a0db6a3782ff2e096115995733200445cc2e80a4060",
+      "content": "C:\\Users\\user\\.cache\\hyperframes\\history\\2e1c496a-ef99-4d9a-81d4-4c327ca93c27\\blobs\\1b\\1b36171117cb7c18f4100a0db6a3782ff2e096115995733200445cc2e80a4060"
+    },
+    "CLAUDE.md": {
+      "hash": "1b36171117cb7c18f4100a0db6a3782ff2e096115995733200445cc2e80a4060",
+      "content": "C:\\Users\\user\\.cache\\hyperframes\\history\\2e1c496a-ef99-4d9a-81d4-4c327ca93c27\\blobs\\1b\\1b36171117cb7c18f4100a0db6a3782ff2e096115995733200445cc2e80a4060"
+    },
+    "hyperframes.json": {
+      "hash": "53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
+      "content": "C:\\Users\\user\\.cache\\hyperframes\\history\\2e1c496a-ef99-4d9a-81d4-4c327ca93c27\\blobs\\53\\53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50"
+    },
+    "index.html": {
+      "hash": "2f5bd663d99278730874b54f74a80e5e0bc1cc7bed3c089b93deee0d19f7fa4d",
+      "content": "C:\\Users\\user\\.cache\\hyperframes\\history\\2e1c496a-ef99-4d9a-81d4-4c327ca93c27\\blobs\\2f\\2f5bd663d99278730874b54f74a80e5e0bc1cc7bed3c089b93deee0d19f7fa4d"
+    },
+    "meta.json": {
+      "hash": "53c1c94c10e80477d389be8eb7a296ceb25db8015c489c528d80e551560d01aa",
+      "content": "C:\\Users\\user\\.cache\\hyperframes\\history\\2e1c496a-ef99-4d9a-81d4-4c327ca93c27\\blobs\\53\\53c1c94c10e80477d389be8eb7a296ceb25db8015c489c528d80e551560d01aa"
+    },
+    "package.json": {
+      "hash": "b0a57dfcb0e81e716a60b58d4511b3862c748f32c4b4321c6ef880cdebc812c5",
+      "content": "C:\\Users\\user\\.cache\\hyperframes\\history\\2e1c496a-ef99-4d9a-81d4-4c327ca93c27\\blobs\\b0\\b0a57dfcb0e81e716a60b58d4511b3862c748f32c4b4321c6ef880cdebc812c5"
+    }
+  },
+  "revisions": {
+    "a7a2a53a-9b27-4154-9ed4-1baf59fb3afa": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792932667617,
+      "endedAt": 1792932667618,
+      "files": {
+        "index.html": {
+          "before": "C:\\Users\\user\\.cache\\hyperframes\\history\\2e1c496a-ef99-4d9a-81d4-4c327ca93c27\\blobs\\f6\\f647f277b2a0acb4998a7f79a757efbc20f620e4fc95407bd99ee36732764a62",
+          "after": "C:\\Users\\user\\.cache\\hyperframes\\history\\2e1c496a-ef99-4d9a-81d4-4c327ca93c27\\blobs\\1f\\1f90320772259c4e6b86e297e2b7131dccd3c3fff240e6380593f011d4ef4cc0"
+        }
+      }
+    },
+    "471bcb34-f9a8-4401-9000-c92bfa7b71e0": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792933896643,
+      "endedAt": 1792933896644,
+      "files": {
+        "index.html": {
+          "before": "C:\\Users\\user\\.cache\\hyperframes\\history\\2e1c496a-ef99-4d9a-81d4-4c327ca93c27\\blobs\\1f\\1f90320772259c4e6b86e297e2b7131dccd3c3fff240e6380593f011d4ef4cc0",
+          "after": "C:\\Users\\user\\.cache\\hyperframes\\history\\2e1c496a-ef99-4d9a-81d4-4c327ca93c27\\blobs\\2f\\2f5bd663d99278730874b54f74a80e5e0bc1cc7bed3c089b93deee0d19f7fa4d"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": "a7a2a53a-9b27-4154-9ed4-1baf59fb3afa",
+      "id": "eeaa10a6-a8c3-499b-8a11-864755d55763"
+    },
+    "revisions": {
+      "a7a2a53a-9b27-4154-9ed4-1baf59fb3afa": [
+        {
+          "id": "eeaa10a6-a8c3-499b-8a11-864755d55763",
+          "scope": "project",
+          "report": "C:\\Users\\user\\.gemini\\antigravity-ide\\scratch\\paperclip\\demo-video\\.hyperframes\\artifacts\\checks\\eeaa10a6-a8c3-499b-8a11-864755d55763.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792932670548,
+          "contentHash": "6729d45d3b5308e195cf3859aaa2c37549563dc943b74c70ea06536eefea155f",
+          "revision": "a7a2a53a-9b27-4154-9ed4-1baf59fb3afa",
+          "inputFingerprint": "8e5913045e1c116fb57e66864e3679c909df3bcd384c1226e11e97aa70d1fced",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "id": "f959b25e-82d1-4fec-a221-aef545f8624b",
+        "scope": "project",
+        "report": "C:\\Users\\user\\.gemini\\antigravity-ide\\scratch\\paperclip\\demo-video\\.hyperframes\\artifacts\\checks\\f959b25e-82d1-4fec-a221-aef545f8624b.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 3000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1792932639397,
+        "contentHash": "f68a7d18068f7055fc03b3578f1f23b566100173cc4ef2927ed6c67f2715d491",
+        "revision": null,
+        "inputFingerprint": "2f6a0985d5218a6b56e8305c57c2ae0ed32b1fd4a06a2e5b1791c58d62acdd49",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "0aa098f2-3224-4f3d-93aa-a12c8114837a",
+      "completedAt": 1792932695634,
+      "output": "C:\\Users\\user\\.gemini\\antigravity-ide\\scratch\\paperclip\\demo-video\\out.mp4",
+      "status": "completed",
+      "revision": "a7a2a53a-9b27-4154-9ed4-1baf59fb3afa"
+    },
+    "retainedRevisions": [
+      "a7a2a53a-9b27-4154-9ed4-1baf59fb3afa"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}

@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "historyId": "72c14999-da5a-4e3a-82a4-59336c85916b",
+  "currentRevision": "30fd2c06-68f2-47cd-acf2-79dfdcdb1f43",
+  "pendingChanges": false,
+  "files": {
+    "AGENTS.md": {
+      "hash": "1b36171117cb7c18f4100a0db6a3782ff2e096115995733200445cc2e80a4060",
+      "content": "C:\\Users\\user\\.cache\\hyperframes\\history\\72c14999-da5a-4e3a-82a4-59336c85916b\\blobs\\1b\\1b36171117cb7c18f4100a0db6a3782ff2e096115995733200445cc2e80a4060"
+    },
+    "CLAUDE.md": {
+      "hash": "1b36171117cb7c18f4100a0db6a3782ff2e096115995733200445cc2e80a4060",
+      "content": "C:\\Users\\user\\.cache\\hyperframes\\history\\72c14999-da5a-4e3a-82a4-59336c85916b\\blobs\\1b\\1b36171117cb7c18f4100a0db6a3782ff2e096115995733200445cc2e80a4060"
+    },
+    "hyperframes.json": {
+      "hash": "53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
+      "content": "C:\\Users\\user\\.cache\\hyperframes\\history\\72c14999-da5a-4e3a-82a4-59336c85916b\\blobs\\53\\53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50"
+    },
+    "index.html": {
+      "hash": "f3a7a157594731a90dbb578855fdd5fd58ade82dfa4f9e1ef95930ec981699fc",
+      "content": "C:\\Users\\user\\.cache\\hyperframes\\history\\72c14999-da5a-4e3a-82a4-59336c85916b\\blobs\\f3\\f3a7a157594731a90dbb578855fdd5fd58ade82dfa4f9e1ef95930ec981699fc"
+    },
+    "meta.json": {
+      "hash": "17de58f6caccf007fae53201c270a4bce138c7c5a7a5f4df27106638b0f5e431",
+      "content": "C:\\Users\\user\\.cache\\hyperframes\\history\\72c14999-da5a-4e3a-82a4-59336c85916b\\blobs\\17\\17de58f6caccf007fae53201c270a4bce138c7c5a7a5f4df27106638b0f5e431"
+    },
+    "package.json": {
+      "hash": "d683227b899ec9c3a65746c6c58f413ade366c912fb6f79920c4a6f45a74942d",
+      "content": "C:\\Users\\user\\.cache\\hyperframes\\history\\72c14999-da5a-4e3a-82a4-59336c85916b\\blobs\\d6\\d683227b899ec9c3a65746c6c58f413ade366c912fb6f79920c4a6f45a74942d"
+    }
+  },
+  "revisions": {
+    "30fd2c06-68f2-47cd-acf2-79dfdcdb1f43": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792966170252,
+      "endedAt": 1792966170254,
+      "files": {
+        "index.html": {
+          "before": "C:\\Users\\user\\.cache\\hyperframes\\history\\72c14999-da5a-4e3a-82a4-59336c85916b\\blobs\\a0\\a0b57eeed4b8d1d7d1ac244891f260b758aef4e211e4c7967550e1f14b1ef515",
+          "after": "C:\\Users\\user\\.cache\\hyperframes\\history\\72c14999-da5a-4e3a-82a4-59336c85916b\\blobs\\f3\\f3a7a157594731a90dbb578855fdd5fd58ade82dfa4f9e1ef95930ec981699fc"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": "30fd2c06-68f2-47cd-acf2-79dfdcdb1f43",
+      "id": "867f4df1-f1d6-42da-aa51-b0c13a727695"
+    },
+    "revisions": {
+      "30fd2c06-68f2-47cd-acf2-79dfdcdb1f43": [
+        {
+          "id": "867f4df1-f1d6-42da-aa51-b0c13a727695",
+          "scope": "project",
+          "report": "C:\\Users\\user\\.gemini\\antigravity-ide\\scratch\\paperclip\\content-videos\\PAP-1-launching-paperclip\\.hyperframes\\artifacts\\checks\\867f4df1-f1d6-42da-aa51-b0c13a727695.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792966173375,
+          "contentHash": "460e92ce5872031a51cc1c5bc4f3fcd2c4b71e6a491d1ce0e95d17c626bd7fd6",
+          "revision": "30fd2c06-68f2-47cd-acf2-79dfdcdb1f43",
+          "inputFingerprint": "36148121fac3cc0aa8adb2f9ad387c468430e8ff27a023f4f80ca120fc359db9",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "id": "25fa41b5-f56e-4c4d-bf2a-170a938b19fc",
+        "scope": "project",
+        "report": "C:\\Users\\user\\.gemini\\antigravity-ide\\scratch\\paperclip\\content-videos\\PAP-1-launching-paperclip\\.hyperframes\\artifacts\\checks\\25fa41b5-f56e-4c4d-bf2a-170a938b19fc.json",
+        "metadata": {
+          "ok": false,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 3000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1792966143924,
+        "contentHash": "ff69336c99dc5d75cd931945fc8af2121f8141bbbba8dac15a2fe3ceb5e0a0f8",
+        "revision": null,
+        "inputFingerprint": "c7f8d6f708379c01cc20f4486207571edaf5c3279d6ef50bb1c6c603d714f170",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "1670f2ca-91de-49bd-93d2-69550a42740b",
+      "completedAt": 1792966195359,
+      "output": "C:\\Users\\user\\.gemini\\antigravity-ide\\scratch\\paperclip\\content-videos\\PAP-1-launching-paperclip\\out.mp4",
+      "status": "completed",
+      "revision": "30fd2c06-68f2-47cd-acf2-79dfdcdb1f43"
+    },
+    "retainedRevisions": [
+      "30fd2c06-68f2-47cd-acf2-79dfdcdb1f43"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}
